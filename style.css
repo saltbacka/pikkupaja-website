@@ -1,0 +1,153 @@
+html,
+body {
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", "Arial", "Segoe UI", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-highlight: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1e2d37 url("/background.jpg") no-repeat;
+  background-position: 0px 15%;
+  background-size: 150%;
+  background-attachment: fixed;
+}
+header {
+  margin-top: 0rem;
+  padding-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+form {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+input {
+  border: none;
+  border-radius: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", "Arial", "Segoe UI", sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  padding: 1rem 1.15rem;
+  width: 400px;
+  margin-bottom: 1.5rem;
+}
+input::placeholder {
+  color: #999;
+}
+button {
+  border: none;
+  border-radius: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", "Arial", "Segoe UI", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+  background-color: #3faf6c;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  letter-spacing: -1px;
+}
+button:hover {
+  background-color: #49c97c;
+}
+footer {
+  padding-bottom: 4rem;
+}
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: white;
+}
+h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+a {
+  color: white;
+  text-decoration: underline;
+}
+footer a {
+  font-size: 1.25rem;
+}
+p,
+li {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", "Arial", "Segoe UI", sans-serif;
+  color: white;
+}
+.add-background-fade {
+  width: 100%;
+  background-image: linear-gradient(rgba(30, 45, 55, 0.8), rgba(30, 45, 55, 0));
+}
+.add-background {
+  width: 100%;
+  background-color: rgba(30, 45, 55, 0.8);
+}
+.page {
+  width: 800px;
+  margin: 0 auto;
+}
+.logo {
+  font-family: "Caveat Brush", cursive;
+  font-size: 2.75rem;
+  line-height: 3.75rem;
+  font-weight: 400;
+  color: white;
+}
+
+/* Post-CSS */
+/*
+:root {
+  --some-color: red;
+}
+.example {
+  color: var(--some-color);
+}
+*/
+
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .logo {
+  }
+  .page {
+    width: auto;
+    padding: 0rem 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+  }
+  input {
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 1.25rem 1.5rem;
+  }
+  button {
+    font-size: 1.5rem;
+    padding: 1.25rem 1.5rem;
+  }
+}
