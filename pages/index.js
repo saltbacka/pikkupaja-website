@@ -28,6 +28,19 @@ const Home = () => {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta property="og:type" content="website" />
+          <meta property="og:image:height" content="1260" />
+          <meta property="og:image:width" content="2400" />
+          <meta
+            property="og:description"
+            content="Avaamme suomalaisen k&auml;sity&ouml;n ja designin kauppapaikan ja etsimme mukaamme tekij&ouml;it&auml;."
+          />
+          <meta
+            property="og:title"
+            content="Pikkupaja - Suomalaisen k&auml;sity&ouml;n ja designin kauppapaikan"
+          />
+          <meta property="og:url" content="https://pikkupaja.fi" />
+          <meta property="og:image" content="https://pikkupaja.fi/share.jpg" />
         </Head>
 
         <header>
