@@ -2,10 +2,12 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
+import Layout from "../components/layout";
+
 import "../style.css";
 
 const Home = () => (
-  <div className="add-background">
+  <Layout className="add-background">
     <div className="page">
       <Head>
         <title>Pikkupaja - Suomalaisen käsityön ja designin kauppapaikan</title>
@@ -129,7 +131,7 @@ const Home = () => (
       <br />
       <br />
     </div>
-  </div>
+  </Layout>
 );
 
 export default Home;

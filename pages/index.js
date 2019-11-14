@@ -3,6 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 
+import Layout from "../components/layout";
+
 import "../style.css";
 
 const url =
@@ -14,7 +16,7 @@ const Home = () => {
   const phoneNumberRef = createRef(undefined);
 
   return (
-    <div className="add-background-fade">
+    <Layout className="add-background-fade">
       <div className="page">
         <Head>
           <title>
@@ -88,6 +90,7 @@ const Home = () => {
                         name="fullName"
                         ref={nameRef}
                         placeholder="Nimesi"
+                        required
                       />
                     </div>
                     <div className="control">
@@ -95,6 +98,7 @@ const Home = () => {
                         name="email"
                         ref={emailRef}
                         placeholder="Sähköpostiosoitteesi"
+                        required
                       />
                     </div>
                     <div className="control">
@@ -102,6 +106,7 @@ const Home = () => {
                         name="phoneNumber"
                         ref={phoneNumberRef}
                         placeholder="Puhelinnumerosi"
+                        required
                       />
                     </div>
                     <button type="submit">Ota minuun yhteyttä</button>
@@ -117,7 +122,7 @@ const Home = () => {
           </Link>
         </footer>
       </div>
-    </div>
+    </Layout>
   );
 };
 
