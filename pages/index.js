@@ -98,6 +98,9 @@ const Home = () => {
                       <input
                         name="email"
                         type="email"
+                        onChange={function() {
+                          this.value = this.value.replace(/\s/, "");
+                        }}
                         ref={emailRef}
                         placeholder="Sähköpostiosoitteesi"
                         required
