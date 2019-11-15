@@ -70,7 +70,9 @@ const Home = () => {
               case "error":
                 return (
                   <p>
-                    <div dangerouslySetInnerHTML={{ __html: message }} />
+                    <h1 style="color: tomato">
+                      <div dangerouslySetInnerHTML={{ __html: message }} />
+                    </h1>
                   </p>
                 );
               default:
@@ -90,12 +92,12 @@ const Home = () => {
                         name="fullName"
                         ref={nameRef}
                         placeholder="Nimesi"
-                        required
                       />
                     </div>
                     <div className="control">
                       <input
                         name="email"
+                        type="email"
                         ref={emailRef}
                         placeholder="Sähköpostiosoitteesi"
                         required
@@ -106,7 +108,6 @@ const Home = () => {
                         name="phoneNumber"
                         ref={phoneNumberRef}
                         placeholder="Puhelinnumerosi"
-                        required
                       />
                     </div>
                     <button type="submit">Ota minuun yhteyttä</button>
