@@ -54,7 +54,7 @@ const Home = () => {
           mukaamme tekijöitä.
         </h1>
         <h2>
-          Kauppapaikka avataan myyjille kesäkuussa 2020.{" "}
+          Kauppapaikka avataan myyjille vuode 2020 aikaa.{" "}
           <strong>Täytä yhteystietosi</strong> niin pääset mukaan. Otamme sinuun
           yhteyttä pikkupajalta ja kerromme lisää.
         </h2>
@@ -78,12 +78,12 @@ const Home = () => {
               default:
                 return (
                   <form
-                    onSubmit={event => {
+                    onSubmit={(event) => {
                       event.preventDefault();
                       subscribe({
                         NAME: nameRef.current.value,
                         EMAIL: emailRef.current.value,
-                        PHONE: phoneNumberRef.current.value
+                        PHONE: phoneNumberRef.current.value,
                       });
                     }}
                   >
@@ -98,7 +98,7 @@ const Home = () => {
                       <input
                         name="email"
                         type="email"
-                        onChange={function() {
+                        onChange={function () {
                           this.value = this.value.replace(/\s/, "");
                         }}
                         ref={emailRef}
