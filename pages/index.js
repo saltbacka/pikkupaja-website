@@ -54,7 +54,7 @@ const Home = () => {
           mukaamme tekijöitä.
         </h1>
         <h2>
-          Kauppapaikka avataan myyjille vuode 2020 aikaa.{" "}
+          Kauppapaikka avataan myyjille vuoden 2020 aikaa.{" "}
           <strong>Täytä yhteystietosi</strong> niin pääset mukaan. Otamme sinuun
           yhteyttä pikkupajalta ja kerromme lisää.
         </h2>
