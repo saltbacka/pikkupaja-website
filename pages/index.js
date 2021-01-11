@@ -54,7 +54,7 @@ const Home = () => {
           mukaamme tekijöitä.
         </h1>
         <h2>
-          Kauppapaikka avataan pian!{" "}
+          Kauppapaikka avataan pian!<br />
           <strong>Täytä yhteystietosi</strong> niin pääset mukaan. Otamme sinuun
           yhteyttä pikkupajalta ja kerromme lisää.
         </h2>
